@@ -7,14 +7,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="index-todo-app">
+  <div class="header">
   <h1 class="logo">ToDo</h1>
 
   <button id="theme-toggle" class="theme-toggle">
-    <span>☀️</span>
+    <span></span>
     <div class="toggle-circle"></div>
   </button>
+  </div>
+  <div class="input-text">
+  <p class="test-top-input">add new task</p>
+  <div class="input">
+      <input type="text" class="input-task" placeholder="what do you want to do ?">
+      <button class="send-task">send</button>
+  </div>
+  </div>
+
+      <div class="box">
+  <input type="radio" class="check-task">
+  <p class="text-task">متن</p>
+  <div class="buttons">
+    <button class="delete-icon"><img src="icons8-delete.svg" alt=""></button>
+    <button>حذف</button>
+  </div>
 </div>
+      </div>
+      
 </body>
 <script src="app.js"></script>
 </html>
