@@ -129,7 +129,6 @@ border: 1px solid rgba(0, 0, 0, 0.233);
 
 .input-task:focus{
       box-shadow:0 0 20px #b964ff15;
-
 }
 .input-task::placeholder {
   opacity: 70%;
@@ -141,10 +140,7 @@ border: 1px solid rgba(0, 0, 0, 0.233);
   display: flex;
   gap: 10px;
   align-items: center;
-    z-index: 1;
-      margin-left: -100px;
-
-
+  margin-left: -100px;
 }
 .test-top-input {
   margin-top: -150px;
@@ -155,7 +151,7 @@ border: 1px solid rgba(0, 0, 0, 0.233);
   gap: 10px;
   border: 1px solid rgba(0, 0, 0, 0.233);  border-radius: 10px;
   height: 50px;
-  margin-top: 100px;
+  margin-top: 40px;
   direction: rtl;
   padding: 10px;
   background-color: #fffdfd;
@@ -200,4 +196,27 @@ input[type="radio"]:checked::before {
   height: 30px;
   background-color: #fffdfd ;
   border: none;
+  margin-left: 10px;
+  transition: transform 0.4s ease;
+
+}
+.edit {
+  width: 30px;
+  height: 30px;
+  background-color: #fffdfd ;
+  border: none;
+  transition: transform 0.4s ease;
+
+}
+.icon {
+   width: 24px;
+  height: 24px;
+}
+.delete-icon:hover {
+  transform: scale(1.05);
+  scale:1.09;
+}
+.edit:hover {
+    transform: scale(1.05);
+    scale:1.09;
 }
