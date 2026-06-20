@@ -19,20 +19,16 @@ addbtn.addEventListener('click', function () {
   div.classList.add('box');
 
   div.innerHTML = `
-    <input type="radio" class="check-task">
+    <input type="checkbox" class="check-task">
     <p class="text-task">${inputvalue}</p>
 
     <div class="buttons">
       <button class="delete-icon">
         <img class="icon" src="delete.svg">
       </button>
-
-      <button class="edit">
-        <img class="icon" src="edit.svg">
-      </button>
     </div>
   `;
-  tasks.appendChild(div);
+  tasks.prepend(div);
   gettext.value = '';
 });
 tasks.addEventListener("click", function(event) {

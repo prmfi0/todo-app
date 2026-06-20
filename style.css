@@ -121,10 +121,12 @@ body {
  border: 2px solid rgba(0, 0, 0, 0.622);
  border-radius: 10px;
  background-color: #fdfdfd;
- padding-left: 10px;
+ padding-right: 10px;
 backdrop-filter:blur(12px);
 outline:none;
 border: 1px solid rgba(0, 0, 0, 0.233);
+font-family: 'vazir';
+  direction: rtl;
 }
 
 .input-task:focus{
@@ -151,7 +153,7 @@ border: 1px solid rgba(0, 0, 0, 0.233);
   gap: 10px;
   border: 1px solid rgba(0, 0, 0, 0.233);  border-radius: 10px;
   height: 50px;
-  margin-top: 40px;
+  margin-top: 20px;
   direction: rtl;
   padding: 10px;
   background-color: #fffdfd;
@@ -219,4 +221,44 @@ input[type="radio"]:checked::before {
 .edit:hover {
     transform: scale(1.05);
     scale:1.09;
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #7151f1;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.05);
+}
+
+input[type="checkbox"]:checked {
+  background: #7151f1;
+}
+
+input[type="checkbox"]::before {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.check-task:checked + .text-task {
+  text-decoration: line-through;
+  color: #999;
+  opacity: 0.6;
+  transition: all 0.3s ease;
 }
